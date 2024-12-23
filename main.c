@@ -35,12 +35,12 @@ int main()
         displayDrone(&drone);
 
         // Управление дронов с клавишами
-        int ch = getch(); // Получаем ввод
+        int ch = getch(); 
         if (ch == 'q')
             break; // Выход из игры при нажатии 'q'
 
         // Обновление позиции дрона с учётом новой клавиши
-        updateDronePosition(&drone, ch); // Передаем клавишу в функцию обновления позиции
+        updateDronePosition(&drone, ch); 
 
         // Сбор тыкв, если дрон находит тыкву
         collectPumpkins(&drone, &field);
@@ -49,7 +49,7 @@ int main()
         autopilot(&drone, &field);
 
         // Обновляем экран
-        refresh(); // Обновление экрана ncurses
+        refresh(); 
 
         // Задержка (для имитации времени)
 #ifdef _WIN32
@@ -59,7 +59,7 @@ int main()
 #endif
     }
 
-    // Завершение работы ncurses
+    
     endwin();
 
     return 0;
