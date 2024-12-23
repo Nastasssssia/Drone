@@ -2,7 +2,7 @@
 #define DRON_H
 
 #include <stdio.h>
-#include "field.h" // Включаем `field.h`
+#include "field.h"
 
 typedef struct Drone
 {
